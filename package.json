@@ -1,0 +1,25 @@
+{
+    "name": "upskill-api-server",
+    "version": "1.0.0",
+    "description": "Telerik Academy API Server for Upskill Programs",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "start-json-server": "json-server data.json",
+        "start-json-server-auth": "json-server data.json -m ./node_modules/json-server-auth -r routes.json"
+    },
+    "author": "Telerik Academy",
+    "license": "ISC",
+    "dependencies": {
+        "@types/cors": "^2.8.17",
+        "cors": "^2.8.5",
+        "json-serve": "^0.1.0",
+        "json-server": "^0.16.3",
+        "json-server-auth": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/nodemon": "^1.19.6",
+        "nodemon": "^3.0.2"
+    }
+}
